@@ -1,3 +1,7 @@
+
+
+
+
 branch 1 -----------index.html,abcd.html
     |
     |----branch 2 -------index.html,abcd.html,something.html
@@ -8,5 +12,12 @@ branch 1 -----------index.html,abcd.html
 
 main -------basics.html,index.html
 |
-|-------html-forms --------basics.html,index.html
+|-------html-forms --------basics.html,index.html,git-visualsation.txt,forms.html
 
+
+
+
+
+shreya ----html-forms  ------- index.html <header> ------- push --------|        |  
+                                                                                 |
+sangeeta -----html-forms ------index.html <footer> -----------------pull|-------push
