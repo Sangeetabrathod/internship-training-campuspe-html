@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="">
+  <meta name="keywords" content="html basics of the webapp">
+  <meta name="description" content="My website for learning">
+  <title>Learn HTML | campuspe</title>
+</head> 
+<body>
+<center>
+  <h3>Register to campuspe</h3>
+  <form method="post" enctype="multipart/form-data">
+    
+    <!-- This is for input type text-->
+     <!--
+        myVariableName -> Camel Case (JS,C#,Java)
+        MyVariableName -> Pascal Case (C#,Java,Python)
+        my_variable_name -> Snake Case (PHP,JAVA)
+        my-variable-name -> Kebab Case 
+        MY_VARIABLE_NAME -> Screaming Snake Case
+        myvariablename -> Lower/Flat Case
+     -->
+
+    <label for="nameId">Name:</label>
+    <input id="nameId" type="text" name="name" placeholder="Enter your name" value="Sangeeta"><br><br>
+
+    <label for="emailId">Email:</label>
+    <input id="emailId" type="email" name="myEmail" placeholder="Enter your email" required><br><br>
+
+    <label for="phoneId">Phone:</label>
+    <input id="phoneId" type="number" name="myPhone" placeholder="Enter your phone number"><br><br>
+
+    <label for="passwordId">Password:</label>
+    <input id="passwordId" type="password" name="password" placeholder="Enter your password"><br><br>
+
+    <label for="confirmPasswordId">Confirm Password:</label>
+    <input id="confirmPasswordId" type="password" name="confirm_Password" placeholder="Confirm your password"><br><br>
+
+    <input type="hidden" name="USER_ID">
+
+    <label>Choose Your Gender</label><br>
+    <label for="genderMale">Male</label>
+    <input type="radio" name="gender" value="male" id="genderMale">
+    <label for="genderFemale">Female</label>
+    <input type="radio" name="gender" value="female" id="genderFemale"><br><br>
+
+    <label>Enter your hobbies:</label><br>
+    <label for="singingId">singing</label>
+    <input type="checkbox" name="hobby" value="singing" id="singingId">
+    <label for="dancingId">dancing</label>
+    <input type="checkbox" name="hobby" value="dancing" id="dancingId">
+    <label for="readingBooksId">reading</label>
+    <input type="checkbox" name="hobby" value="reading" id="readingBooksId"><br><br>
+
+    <label for="courseId">Select your course:</label>
+    <select id="courseId" name="courses">
+      <optgroup label="Science">
+          <option value="btech">BTech</option>
+          <option value="bsc">BSC</option>
+          <option value="btech">BTech</option>
+      </optgroup>
+      <optgroup label="commerce">
+          <option value="bcom">BCom</option>
+      </optgroup>
+      <optgroup label="arts">
+          <option value="ba">BA</option>
+          <option value="bca">BCA</option>
+          <option value="bba">BBA</option>
+      </optgroup> 
+    </select><br><br>
+
+    <label for="subjectsId">Subjects</label>
+    <select id="subjectsId" name="Subjects" multiple>
+       <option>Computer Science</option>
+       <option>Physics</option>
+       <option>Control systems</option>
+       <option>Data Structures</option>
+       <option>Operating Systems</option>
+       <option>Database Management Systems</option> 
+    </select><br><br>
+
+    <label id="theme"></label>
+    <input type="color" id="theme" name="theme"><br><br>
+
+    <label for="dobId">Date of Birth:</label>
+    <input type="date" id="dobId" name="dob"><br><br>
+
+    <input type="reset" value="Reset">
+    <!-- <input type="submit" value="Submit"> -->
+
+    <button type="button" id="submitBtn">Submit</button>
+</form>
+</center>
+</body>
+</html>
