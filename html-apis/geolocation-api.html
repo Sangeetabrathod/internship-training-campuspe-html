@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="">
+  <meta name="keywords" content="html basics of the webapp">
+  <meta name="description" content="My website for learning">
+  <title>HTML APIs | Geolocation APIs | campuspe</title>
+
+</head> 
+<body>
+    <h1>Geolocation API Example</h1>
+    <button onclick="getLocation()">Get My Location</button>
+    <p><b>Latitude</b>: <span id="latitude"></span></p>
+    <p><b>Longitude</b>: <span id="longitude"></span></p>
+    <p><b>Accuracy</b>: <span id="accuracy"></span></p>
+
+    <script>
+        function getlocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition, showError)
+            } else {
+                alert("Geolocation is not supported by this browser.")
+            }
+        }
+
+        function showPosition(position) {
+            console.log(position)
+            document.getElementById("latitude").textContent = position.coords.latitude
+            document.getElementById("longitude").textContent = position.coords.longitude
+            document.getElementById("accuracy").textContent = position.coords.accuracy.toFixed(2)
+        }
+
+        function showError(error) {
+             console.log(error);
+        }
+    </script>
+
+</body>
+</html>
